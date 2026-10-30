@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NearFix – Report & Track Potholes</title>
+    <meta name="description" content="Report and track potholes in your city with NearFix." />
+
+    <!-- Prevent theme flash before first paint -->
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('nearfix_theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-DZ7b0Em6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CNwvk0Yo.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
